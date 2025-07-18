@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const {schemaValidator} = require("../middlewares/schemaValidator.middleware");
 const { asyncHandler } = require("../middlewares/asyncHandler.middleware");
-const { userController } = require("../controller");
+const { userController } = require("../controllers");
 const authenticate = require("../middlewares/authenticate.middleware");
 const checkPermission = require("../middlewares/checkPermission.middleware");
 

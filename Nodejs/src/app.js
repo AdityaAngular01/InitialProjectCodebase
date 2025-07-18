@@ -10,7 +10,7 @@ const {
     errorHandler
 } = require("./middlewares/error.middleware");
 const successResponse = require("./middlewares/successResponse.middleware");
-const { ApiError } = require("./util");
+const { ApiError } = require("./utils");
 
 app.use(cors({
     origin: function (origin, callback) {

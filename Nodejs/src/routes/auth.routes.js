@@ -3,7 +3,7 @@ const router = express.Router();
 
 const {schemaValidator} = require("../middlewares/schemaValidator.middleware");
 const { asyncHandler } = require("../middlewares/asyncHandler.middleware");
-const { authController } = require("../controller");
+const { authController } = require("../controllers");
 const { registerSchema, loginSchema } = require("../validations").auth;
 
 router.post("/register", schemaValidator(registerSchema), asyncHandler(authController.register));

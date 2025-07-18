@@ -1,4 +1,4 @@
-const {userRepository} = require("../repository/User.repository");
+const {userRepository} = require("../repository");
 const {ApiError} = require("../utils");
 const {httpCodes} = require("../config")
 
